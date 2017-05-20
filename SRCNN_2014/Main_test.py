@@ -20,7 +20,7 @@ if __name__ == '__main__':
     with tf.Session() as sess:
         sess.run(init)
         # Load weights
-        saver.restore(sess, './save_param/Epoch_3000-0')
+        saver.restore(sess, './save_param/Epoch_6000-0')
 
         # Run CNN
         Out=sess.run(Train_output, feed_dict={Train_img_LR:np.reshape(Bic_Output,[1,Height,Width,1])})
