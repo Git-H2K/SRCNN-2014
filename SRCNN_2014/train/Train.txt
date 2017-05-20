@@ -1,0 +1,1 @@
+copy training images to this folder
